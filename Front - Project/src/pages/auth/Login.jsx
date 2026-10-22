@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext.jsx';
-import { useForm } from '../hooks/useForm.js';
-import { requerido, correoValido, validar } from '../utils/validators.js';
-import { getErrorMessage } from '../utils/errors.js';
-import AuthCard from '../components/AuthCard.jsx';
-import FormField from '../components/FormField.jsx';
-import Alert from '../components/Alert.jsx';
+import { useAuth } from '../../hooks/auth/useAuth.js';
+import { useForm } from '../../hooks/common/useForm.js';
+import { requerido, correoValido, validar } from '../../utils/validators.js';
+import { getErrorMessage } from '../../utils/errors.js';
+import AuthCard from '../../components/auth/AuthCard.jsx';
+import FormField from '../../components/common/FormField.jsx';
+import Alert from '../../components/common/Alert.jsx';
 
 // FLUJO DE DATOS DEL LOGIN
 //   <input> ──onChange──▶ useForm (estado) ──submit──▶ AuthContext.login()

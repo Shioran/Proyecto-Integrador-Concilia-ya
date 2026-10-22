@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext.jsx';
-import EstadoBadge from './EstadoBadge.jsx';
-import { formatFecha, formatMonto } from '../utils/format.js';
+import { useAuth } from '../../hooks/auth/useAuth.js';
+import EstadoBadge from '../common/EstadoBadge.jsx';
+import { formatFecha, formatMonto } from '../../utils/format.js';
 
 // Tabla reutilizable de conflictos (Mis conflictos y Dashboards).
 // Recibe los datos por props: el componente solo PINTA, no pide nada al backend.

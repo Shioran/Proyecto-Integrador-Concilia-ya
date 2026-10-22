@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import EstadoBadge from './EstadoBadge.jsx';
-import { formatFecha } from '../utils/format.js';
+import EstadoBadge from '../common/EstadoBadge.jsx';
+import { formatFecha } from '../../utils/format.js';
 
 // Tabla reutilizable de mediaciones (pantalla Mediaciones y Dashboard del mediador).
 export default function MediacionesTable({ mediaciones }) {

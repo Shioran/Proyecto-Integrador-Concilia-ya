@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext.jsx';
-import { useFetch } from '../hooks/useFetch.js';
-import { conflictosApi } from '../api/conflictosApi.js';
-import { ESTADOS, ESTADO_INFO, getEstadoCodigo } from '../utils/estados.js';
-import { ROLES } from '../utils/roles.js';
-import PageHeader from '../components/PageHeader.jsx';
-import Async from '../components/Async.jsx';
-import ConflictosTable from '../components/ConflictosTable.jsx';
+import { useAuth } from '../../hooks/auth/useAuth.js';
+import { useFetch } from '../../hooks/common/useFetch.js';
+import { conflictosApi } from '../../api/conflictosApi.js';
+import { ESTADOS, ESTADO_INFO, getEstadoCodigo } from '../../utils/estados.js';
+import { ROLES } from '../../utils/roles.js';
+import PageHeader from '../../components/common/PageHeader.jsx';
+import Async from '../../components/common/Async.jsx';
+import ConflictosTable from '../../components/conflictos/ConflictosTable.jsx';
 
 // LISTA DE CONFLICTOS (para el Usuario se titula "Mis conflictos").
 // Aquí los filtros son componentes controlados con useState "a mano":

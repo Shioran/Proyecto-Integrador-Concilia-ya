@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import { createContext, useState, useEffect, useCallback } from 'react';
 import { authApi } from '../api/authApi.js';
 import { setUnauthorizedHandler } from '../api/apiClient.js';
 import { tokenStorage, isTokenExpired } from '../api/tokenStorage.js';
@@ -8,15 +8,10 @@ import { resolverRol } from '../utils/roles.js';
 // AuthContext: de aquí sale el ESTADO DE SESIÓN para toda la app.
 //   user    → { id, nombre, correo, perfilId, rol } o null si no hay sesión
 //   loading → true mientras al arrancar comprobamos si había una sesión guardada
-// Cualquier componente lo lee con:  const { user, login, logout } = useAuth();
+// Cualquier componente lo lee con el hook:  const { user, login, logout } = useAuth();
+//   (el hook vive en hooks/auth/useAuth.js)
 // ─────────────────────────────────────────────────────────────
-const AuthContext = createContext(null);
-
-export function useAuth() {
-  const ctx = useContext(AuthContext);
-  if (!ctx) throw new Error('useAuth debe usarse dentro de <AuthProvider>');
-  return ctx;
-}
+export const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);

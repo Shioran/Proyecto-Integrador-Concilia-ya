@@ -1,4 +1,4 @@
-import { ESTADO_INFO, getEstadoCodigo } from '../utils/estados.js';
+import { ESTADO_INFO, getEstadoCodigo } from '../../utils/estados.js';
 
 // Etiqueta de color según el estado del conflicto o de la mediación.
 export default function EstadoBadge({ item }) {

@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext.jsx';
-import { useFetch } from '../../hooks/useFetch.js';
+import { useAuth } from '../../hooks/auth/useAuth.js';
+import { useFetch } from '../../hooks/common/useFetch.js';
 import { conflictosApi } from '../../api/conflictosApi.js';
 import { getEstadoCodigo, ESTADOS } from '../../utils/estados.js';
-import PageHeader from '../../components/PageHeader.jsx';
-import StatCard from '../../components/StatCard.jsx';
-import Async from '../../components/Async.jsx';
-import ConflictosTable from '../../components/ConflictosTable.jsx';
+import PageHeader from '../../components/common/PageHeader.jsx';
+import StatCard from '../../components/dashboard/StatCard.jsx';
+import Async from '../../components/common/Async.jsx';
+import ConflictosTable from '../../components/conflictos/ConflictosTable.jsx';
 
 export default function DashboardUsuario() {
   const { user } = useAuth();

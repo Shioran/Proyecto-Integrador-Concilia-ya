@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import { useFetch } from '../../hooks/useFetch.js';
-import { useForm } from '../../hooks/useForm.js';
+import { useFetch } from '../../hooks/common/useFetch.js';
+import { useForm } from '../../hooks/common/useForm.js';
 import { tiposConflictoApi } from '../../api/catalogosApi.js';
 import { requerido, maximo, validar } from '../../utils/validators.js';
 import { getErrorMessage, getFieldErrors } from '../../utils/errors.js';
-import PageHeader from '../../components/PageHeader.jsx';
-import Async from '../../components/Async.jsx';
-import Alert from '../../components/Alert.jsx';
-import Modal from '../../components/Modal.jsx';
-import FormField from '../../components/FormField.jsx';
+import PageHeader from '../../components/common/PageHeader.jsx';
+import Async from '../../components/common/Async.jsx';
+import Alert from '../../components/common/Alert.jsx';
+import Modal from '../../components/common/Modal.jsx';
+import FormField from '../../components/common/FormField.jsx';
 
 // CRUD completo de "Tipos de conflicto" (solo ADMIN):
 //   Create → POST · Read → GET · Update → PUT · Delete → DELETE (baja lógica: activo=false)

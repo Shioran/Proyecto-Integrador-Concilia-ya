@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { useFetch } from '../hooks/useFetch.js';
-import { useForm } from '../hooks/useForm.js';
-import { mediacionesApi } from '../api/mediacionesApi.js';
-import { usuariosApi } from '../api/usuariosApi.js';
-import { requerido, maximo } from '../utils/validators.js';
-import { aInputFecha } from '../utils/format.js';
-import { getErrorMessage, getFieldErrors } from '../utils/errors.js';
-import FormField from './FormField.jsx';
-import Alert from './Alert.jsx';
+import { useFetch } from '../../hooks/common/useFetch.js';
+import { useForm } from '../../hooks/common/useForm.js';
+import { mediacionesApi } from '../../api/mediacionesApi.js';
+import { usuariosApi } from '../../api/usuariosApi.js';
+import { requerido, maximo } from '../../utils/validators.js';
+import { aInputFecha } from '../../utils/format.js';
+import { getErrorMessage, getFieldErrors } from '../../utils/errors.js';
+import FormField from '../common/FormField.jsx';
+import Alert from '../common/Alert.jsx';
 
 // Formulario del ADMIN con dos usos:
 //   · ASIGNAR  (sin `mediacion`)  → POST /api/mediaciones     (conflicto ABIERTO → EN_MEDIACION)

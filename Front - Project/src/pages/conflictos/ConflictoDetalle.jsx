@@ -1,19 +1,19 @@
 import { useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext.jsx';
-import { useFetch } from '../hooks/useFetch.js';
-import { conflictosApi } from '../api/conflictosApi.js';
-import { mediacionesApi } from '../api/mediacionesApi.js';
-import { usuariosApi } from '../api/usuariosApi.js';
-import { getEstadoCodigo, ESTADOS } from '../utils/estados.js';
-import { ROLES } from '../utils/roles.js';
-import { formatFecha, formatMonto } from '../utils/format.js';
-import { getErrorMessage } from '../utils/errors.js';
-import PageHeader from '../components/PageHeader.jsx';
-import Async from '../components/Async.jsx';
-import Alert from '../components/Alert.jsx';
-import EstadoBadge from '../components/EstadoBadge.jsx';
-import MediacionAdminForm from '../components/MediacionAdminForm.jsx';
+import { useAuth } from '../../hooks/auth/useAuth.js';
+import { useFetch } from '../../hooks/common/useFetch.js';
+import { conflictosApi } from '../../api/conflictosApi.js';
+import { mediacionesApi } from '../../api/mediacionesApi.js';
+import { usuariosApi } from '../../api/usuariosApi.js';
+import { getEstadoCodigo, ESTADOS } from '../../utils/estados.js';
+import { ROLES } from '../../utils/roles.js';
+import { formatFecha, formatMonto } from '../../utils/format.js';
+import { getErrorMessage } from '../../utils/errors.js';
+import PageHeader from '../../components/common/PageHeader.jsx';
+import Async from '../../components/common/Async.jsx';
+import Alert from '../../components/common/Alert.jsx';
+import EstadoBadge from '../../components/common/EstadoBadge.jsx';
+import MediacionAdminForm from '../../components/mediaciones/MediacionAdminForm.jsx';
 
 function Dato({ label, children }) {
   return (

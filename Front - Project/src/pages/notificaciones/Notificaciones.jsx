@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { useFetch } from '../hooks/useFetch.js';
-import { notificacionesApi } from '../api/notificacionesApi.js';
-import { formatFecha } from '../utils/format.js';
-import { getErrorMessage } from '../utils/errors.js';
-import PageHeader from '../components/PageHeader.jsx';
-import Async from '../components/Async.jsx';
-import Alert from '../components/Alert.jsx';
+import { useFetch } from '../../hooks/common/useFetch.js';
+import { notificacionesApi } from '../../api/notificacionesApi.js';
+import { formatFecha } from '../../utils/format.js';
+import { getErrorMessage } from '../../utils/errors.js';
+import PageHeader from '../../components/common/PageHeader.jsx';
+import Async from '../../components/common/Async.jsx';
+import Alert from '../../components/common/Alert.jsx';
 
 export default function Notificaciones() {
   const { data, loading, error, reload } = useFetch(notificacionesApi.mias);

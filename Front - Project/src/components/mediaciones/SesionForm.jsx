@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { useForm } from '../hooks/useForm.js';
-import { mediacionesApi } from '../api/mediacionesApi.js';
-import { requerido, maximo, validar } from '../utils/validators.js';
-import { getErrorMessage, getFieldErrors } from '../utils/errors.js';
-import FormField from './FormField.jsx';
-import Alert from './Alert.jsx';
+import { useForm } from '../../hooks/common/useForm.js';
+import { mediacionesApi } from '../../api/mediacionesApi.js';
+import { requerido, maximo, validar } from '../../utils/validators.js';
+import { getErrorMessage, getFieldErrors } from '../../utils/errors.js';
+import FormField from '../common/FormField.jsx';
+import Alert from '../common/Alert.jsx';
 
 // MEDIADOR: registra una sesión de la mediación → POST /api/mediaciones/{id}/sesiones
 export default function SesionForm({ mediacionId, onSaved }) {

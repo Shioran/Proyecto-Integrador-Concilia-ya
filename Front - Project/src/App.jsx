@@ -1,21 +1,21 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { useAuth } from './context/AuthContext.jsx';
+import { useAuth } from './hooks/auth/useAuth.js';
 import { ROLES } from './utils/roles.js';
-import Loading from './components/Loading.jsx';
-import AppLayout from './components/AppLayout.jsx';
-import ProtectedRoute from './components/ProtectedRoute.jsx';
-import Login from './pages/Login.jsx';
-import Register from './pages/Register.jsx';
-import Dashboard from './pages/Dashboard.jsx';
-import Conflictos from './pages/Conflictos.jsx';
-import ConflictoForm from './pages/ConflictoForm.jsx';
-import ConflictoDetalle from './pages/ConflictoDetalle.jsx';
-import Mediaciones from './pages/Mediaciones.jsx';
-import MediacionDetalle from './pages/MediacionDetalle.jsx';
-import Notificaciones from './pages/Notificaciones.jsx';
+import Loading from './components/common/Loading.jsx';
+import AppLayout from './components/layout/AppLayout.jsx';
+import ProtectedRoute from './components/auth/ProtectedRoute.jsx';
+import Login from './pages/auth/Login.jsx';
+import Register from './pages/auth/Register.jsx';
+import Dashboard from './pages/dashboard/Dashboard.jsx';
+import Conflictos from './pages/conflictos/Conflictos.jsx';
+import ConflictoForm from './pages/conflictos/ConflictoForm.jsx';
+import ConflictoDetalle from './pages/conflictos/ConflictoDetalle.jsx';
+import Mediaciones from './pages/mediaciones/Mediaciones.jsx';
+import MediacionDetalle from './pages/mediaciones/MediacionDetalle.jsx';
+import Notificaciones from './pages/notificaciones/Notificaciones.jsx';
 import TiposConflicto from './pages/admin/TiposConflicto.jsx';
 import Usuarios from './pages/admin/Usuarios.jsx';
-import NotFound from './pages/NotFound.jsx';
+import NotFound from './pages/common/NotFound.jsx';
 
 // ─────────────────────────────────────────────────────────────
 // MAPA DE RUTAS de la aplicación (React Router v6, rutas anidadas):

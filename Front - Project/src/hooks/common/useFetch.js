@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { getErrorMessage } from '../utils/errors.js';
+import { getErrorMessage } from '../../utils/errors.js';
 
 // ─────────────────────────────────────────────────────────────
 // useFetch: carga datos desde la capa src/api/* y expone 3 estados de pantalla:

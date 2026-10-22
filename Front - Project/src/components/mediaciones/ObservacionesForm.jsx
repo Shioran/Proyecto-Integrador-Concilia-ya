@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { mediacionesApi } from '../api/mediacionesApi.js';
-import { getErrorMessage } from '../utils/errors.js';
-import Alert from './Alert.jsx';
+import { mediacionesApi } from '../../api/mediacionesApi.js';
+import { getErrorMessage } from '../../utils/errors.js';
+import Alert from '../common/Alert.jsx';
 
 // MEDIADOR: edita las observaciones generales → PUT /api/mediaciones/{id}  { observaciones }
 // Formulario de UN solo campo: aquí se ve el componente controlado en su forma más simple.

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext.jsx';
-import { notificacionesApi } from '../api/notificacionesApi.js';
-import { ROLES, ROL_LABEL } from '../utils/roles.js';
+import { useAuth } from '../../hooks/auth/useAuth.js';
+import { notificacionesApi } from '../../api/notificacionesApi.js';
+import { ROLES, ROL_LABEL } from '../../utils/roles.js';
 
 // Menú declarativo: cada opción dice qué roles la pueden ver.
 // Para agregar una pantalla al menú basta con agregar una línea aquí.

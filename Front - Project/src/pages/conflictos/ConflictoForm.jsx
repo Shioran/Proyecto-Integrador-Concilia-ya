@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { useFetch } from '../hooks/useFetch.js';
-import { useForm } from '../hooks/useForm.js';
-import { conflictosApi } from '../api/conflictosApi.js';
-import { tiposConflictoApi } from '../api/catalogosApi.js';
-import { usuariosApi } from '../api/usuariosApi.js';
-import { requerido, maximo, numeroNoNegativo, validar } from '../utils/validators.js';
-import { getErrorMessage, getFieldErrors } from '../utils/errors.js';
-import { getEstadoCodigo, ESTADOS } from '../utils/estados.js';
-import PageHeader from '../components/PageHeader.jsx';
-import FormField from '../components/FormField.jsx';
-import Async from '../components/Async.jsx';
-import Alert from '../components/Alert.jsx';
+import { useFetch } from '../../hooks/common/useFetch.js';
+import { useForm } from '../../hooks/common/useForm.js';
+import { conflictosApi } from '../../api/conflictosApi.js';
+import { tiposConflictoApi } from '../../api/catalogosApi.js';
+import { usuariosApi } from '../../api/usuariosApi.js';
+import { requerido, maximo, numeroNoNegativo, validar } from '../../utils/validators.js';
+import { getErrorMessage, getFieldErrors } from '../../utils/errors.js';
+import { getEstadoCodigo, ESTADOS } from '../../utils/estados.js';
+import PageHeader from '../../components/common/PageHeader.jsx';
+import FormField from '../../components/common/FormField.jsx';
+import Async from '../../components/common/Async.jsx';
+import Alert from '../../components/common/Alert.jsx';
 
 // ─────────────────────────────────────────────────────────────
 // Una sola pantalla para CREAR (/conflictos/nuevo) y EDITAR (/conflictos/:id/editar).

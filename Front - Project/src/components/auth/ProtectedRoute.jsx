@@ -1,6 +1,6 @@
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext.jsx';
-import Forbidden from '../pages/Forbidden.jsx';
+import { useAuth } from '../../hooks/auth/useAuth.js';
+import Forbidden from '../../pages/common/Forbidden.jsx';
 
 // ─────────────────────────────────────────────────────────────
 // Guardia de rutas. Se usa como "ruta padre" en App.jsx:

@@ -1,8 +1,8 @@
-import { useAuth } from '../context/AuthContext.jsx';
-import { ROLES } from '../utils/roles.js';
-import DashboardAdmin from './dashboard/DashboardAdmin.jsx';
-import DashboardMediador from './dashboard/DashboardMediador.jsx';
-import DashboardUsuario from './dashboard/DashboardUsuario.jsx';
+import { useAuth } from '../../hooks/auth/useAuth.js';
+import { ROLES } from '../../utils/roles.js';
+import DashboardAdmin from './DashboardAdmin.jsx';
+import DashboardMediador from './DashboardMediador.jsx';
+import DashboardUsuario from './DashboardUsuario.jsx';
 
 // Un solo path (/dashboard), tres pantallas distintas según el rol del token.
 // "Renderizado condicional": React decide qué componente pintar según el estado `user`.

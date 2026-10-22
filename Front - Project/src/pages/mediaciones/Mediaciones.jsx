@@ -1,8 +1,8 @@
-import { useFetch } from '../hooks/useFetch.js';
-import { mediacionesApi } from '../api/mediacionesApi.js';
-import PageHeader from '../components/PageHeader.jsx';
-import Async from '../components/Async.jsx';
-import MediacionesTable from '../components/MediacionesTable.jsx';
+import { useFetch } from '../../hooks/common/useFetch.js';
+import { mediacionesApi } from '../../api/mediacionesApi.js';
+import PageHeader from '../../components/common/PageHeader.jsx';
+import Async from '../../components/common/Async.jsx';
+import MediacionesTable from '../../components/mediaciones/MediacionesTable.jsx';
 
 // El backend decide qué mediaciones ve cada rol (Admin: todas · Mediador: asignadas · Usuario: donde es parte)
 export default function Mediaciones() {

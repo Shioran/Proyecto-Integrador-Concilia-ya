@@ -1,16 +1,16 @@
 import { Link, useParams } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext.jsx';
-import { useFetch } from '../hooks/useFetch.js';
-import { mediacionesApi } from '../api/mediacionesApi.js';
-import { ROLES } from '../utils/roles.js';
-import { formatFecha } from '../utils/format.js';
-import PageHeader from '../components/PageHeader.jsx';
-import Async from '../components/Async.jsx';
-import EstadoBadge from '../components/EstadoBadge.jsx';
-import SesionForm from '../components/SesionForm.jsx';
-import DictamenForm from '../components/DictamenForm.jsx';
-import ObservacionesForm from '../components/ObservacionesForm.jsx';
-import MediacionAdminForm from '../components/MediacionAdminForm.jsx';
+import { useAuth } from '../../hooks/auth/useAuth.js';
+import { useFetch } from '../../hooks/common/useFetch.js';
+import { mediacionesApi } from '../../api/mediacionesApi.js';
+import { ROLES } from '../../utils/roles.js';
+import { formatFecha } from '../../utils/format.js';
+import PageHeader from '../../components/common/PageHeader.jsx';
+import Async from '../../components/common/Async.jsx';
+import EstadoBadge from '../../components/common/EstadoBadge.jsx';
+import SesionForm from '../../components/mediaciones/SesionForm.jsx';
+import DictamenForm from '../../components/mediaciones/DictamenForm.jsx';
+import ObservacionesForm from '../../components/mediaciones/ObservacionesForm.jsx';
+import MediacionAdminForm from '../../components/mediaciones/MediacionAdminForm.jsx';
 
 const RESULTADO = { ACUERDO: 'Hubo acuerdo', SIN_ACUERDO: 'Sin acuerdo' };
 
